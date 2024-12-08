@@ -26,8 +26,6 @@ CREATE TABLE place (
     CONSTRAINT fk_user_renting FOREIGN KEY (user_renting_id) REFERENCES users(id)
 );
 
-
-
 CREATE TABLE booking (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     user_id BIGINT NOT NULL,
